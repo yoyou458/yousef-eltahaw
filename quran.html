@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>القرآن الكريم | صدقة جارية</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <div class="title">
+        <b>القرآن الكريم</b>
+        <span>قراءة + تلاوة مشاري العفاسي</span>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">الرئيسية</a>
+      <a class="active" href="quran.html">القرآن الكريم</a>
+      <a href="duas.html">الأدعية</a>
+      <a href="tasbih.html">التسبيح</a>
+      <a href="azkar.html">الأذكار</a>
+      <a href="khatma.html">الختمة</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h2>اختيار سورة</h2>
+  <p class="sub">ابحث باسم السورة أو رقمها، ثم اخترها للقراءة والاستماع.</p>
+
+  <div class="card" style="padding:14px">
+    <div class="field">
+      <input id="search" class="input" placeholder="ابحث عن سورة… مثل: البقرة / الكهف / 18" />
+      <select id="surahSelect"></select>
+      <button id="loadBtn" class="btn">تحميل السورة</button>
+    </div>
+
+    <div style="margin-top:12px">
+      <div class="small">مشغل التلاوة (مشاري راشد العفاسي):</div>
+      <audio id="audio" controls style="width:100%; margin-top:8px"></audio>
+    </div>
+  </div>
+
+  <div style="height:14px"></div>
+
+  <div class="card" style="padding:14px">
+    <div class="small" id="status">جارٍ تحميل قائمة السور…</div>
+    <div id="ayahs" style="margin-top:12px"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container small">
+    تذكير: اقرأ وادعُ للوالد رحمه الله — <b style="color:var(--gold2)">أشرف كمال الطحاوي</b>.
+  </div>
+</footer>
+
+<script src="quran.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الختمة | صدقة جارية</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <div class="title">
+        <b>ختمة القرآن</b>
+        <span>متابعة بسيطة ومحفوظة</span>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">الرئيسية</a>
+      <a href="quran.html">القرآن الكريم</a>
+      <a href="duas.html">الأدعية</a>
+      <a href="tasbih.html">التسبيح</a>
+      <a href="azkar.html">الأذكار</a>
+      <a class="active" href="khatma.html">الختمة</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="card" style="padding:14px">
+    <h2 style="margin-top:0">متابعة الختمة</h2>
+    <p class="sub">سجّل تقدّمك (بالأجزاء 1 → 30). محفوظ على جهازك.</p>
+
+    <div class="field">
+      <select id="juz"></select>
+      <button class="btn" id="markDone">تم إنجاز الجزء</button>
+      <button class="btn" id="resetAll">تصفير الختمة</button>
+    </div>
+
+    <div style="margin-top:12px" class="small" id="progress"></div>
+    <div id="doneList" class="list" style="margin-top:12px"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container small">
+    اللهم اجعل ثواب الختمة لروح <b style="color:var(--gold2)">أشرف كمال الطحاوي</b>.
+  </div>
+</footer>
+
+<script src="khatma.js"></script>
+</body>
+</html>
